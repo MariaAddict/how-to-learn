@@ -78,6 +78,13 @@
    color: #2f80ed;
    text-decoration: none;
 }
+
+.header__link:hover {
+  text-decoration: blink;
+  color: #1f1f1f;
+  text-shadow: 2px 2px 5px rebeccapurple;
+}
+
 /*конец Шапки сайта*/
 
 
@@ -143,14 +150,13 @@
 
 .section-title {
   width: 60%;
+  margin: 0 auto 20px;
+  padding: 0;
   font-size: 60px;
   line-height: 69px;
-  margin: auto;
   text-align: center; 
   color: #000;
   font-weight: bold;
-  margin: 0 auto 20px;
-  display: flex;
 }
 
 .section-subtitle {
@@ -162,7 +168,6 @@
   color: #000;
   font-weight: normal;
   margin: 0 auto;
-  display: flex;
 }
 
 
@@ -208,22 +213,17 @@
 .feinman {
   background-color: #f2f2f2;
   min-height: 790px;
+  width: 100%;
+  background-image: url(../images/feynman.png);
+  background-size: 867px 632px; /*ширина и высота для Феймана*/
+  background-position: left bottom; /*расположение изображения*/
+  background-repeat: no-repeat; /*отключен повтор*/
   position: relative;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.feinman__image {
-  background-image: url(../images/feynman.png);
-  height: 632px;
-  width: 867px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
 }
 
 .feinman__title {
@@ -258,12 +258,18 @@
   color: #000;
   font-weight: normal;
   position: absolute;
+  text-decoration: none;
   margin: 0;
   top: 50%;
   right: 48px;
   z-index: 2;
 }
 /*конец Метод Феймана*/
+
+.feinman__link:hover {
+  color: #2f80ed;
+  text-decoration: underline;
+}
 
 /*Принципы обучения*/
 .kaufman {
@@ -275,7 +281,6 @@
 .section-title_theme_dark {
   margin: 90px auto  20px;
   color: #f2f2f2;
-  display: flex;
   z-index: 2;
 }
 
@@ -322,26 +327,27 @@
 .footer {
   background-color: #1f1f1f;
   min-height: 350px;
+  padding: 1px;
 }
 
 .footer__columns {
+   width: 90%;
    min-height: 350px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    flex-wrap: wrap;
-   flex-basis: 711px;
    position: relative;
-   top: 60px;
-   bottom: 40px; /*добавлен нижний отступ*/
+   margin: 60px auto 40px;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: 64px;
+  margin: 0;
 }
 
 .footer__autor {
@@ -359,51 +365,59 @@
 }
 
 .footer__column-heading {
+  margin: 0;
   padding-bottom: 20px;
+  color: #fff;
 }
 
 .footer__column-links {
+  margin: 0;
+  padding: 0;
+  list-style:none; 
+}
+
+.footer__column-link {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   color: #fff;
   text-decoration: none;
-  margin: auto; /*выровнить по центру*/
 }
 
+.footer__column-link:hover {
+  text-shadow: 2px 2px 7px silver;
+}
 
 .footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   line-height: 30px;
   font-size: 18px;
   color: #f2f2f2;
-  margin-left: auto;
+  margin: 0;
+  padding: 0;
+  width: auto;
 }
 
 .footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   line-height: 30px;
   font-size: 18px;
   color: #f2f2f2;
-  margin-left: auto;
+  margin: 0;
+  padding: 0;
+  width: auto;
 }
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  padding-right: 5px; /*отступ от текста*/
+  padding-right: 10px; /*отступ от текста*/
 }
 /*конец подвала*/
-
-
-/*Общие блоки*/
-.flex-column {
-  flex-direction: column;
-}
- .flex-row {
-  flex-direction: row;
-}
-
-/*парамеры для подзаголовоков header и footer */
-.subtitle {
-  line-height: 25px;
-  font-size: 18px;
-}
