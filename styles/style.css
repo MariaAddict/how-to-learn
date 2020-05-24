@@ -20,18 +20,18 @@
 }
 
 .logo {   /*убрано позиционирование*/
-  height: 32px;
   width: 182px;
   background-size: cover;
   background-position: center;
-  left: 64px;
   z-index: 2;
 }
 
 .logo_place_header {  /*добавлено позиционирование*/
+  height: 32px;
   background-image: url('../images/logo_place_header.svg');
   position: absolute;
   top: 30px;
+  left: 64px;
 }
 
 .header__title {
@@ -49,6 +49,9 @@
 
 .header__subtitle {
   width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
   position: absolute;
   margin: 0;           /*добавлен отступ 0*/
   left: 64px;
@@ -91,8 +94,8 @@
 /* Вторая страница сайта - "Главные проблемы в обучении" */
 .description {
   background-color: #fff;
-  padding: 100px 0;
-  position: relative;
+  padding: 100px 0 0;   /*отступ только сверху*/
+  position: relative; 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -104,29 +107,29 @@
   min-height: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
   width: 175px;
   align-self: flex-start;
-  margin-right: 50px;
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;               /*прижала надпись к началу блока*/
 }
 
 .two-columns__main-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-width: 784px;
+  max-width: 80%;
 }
 
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin-top: 0;
   margin-bottom: 30px;
 }
  
@@ -144,7 +147,7 @@
 /*Цифры и факты*/
 .digits {
   background-color: #fff;
-  padding: 100px 0;
+  padding: 100px 0;         /*отступ между description И feynman*/
   position: relative;
 }
 
@@ -178,7 +181,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
-  margin: 0 auto 100px;
+  margin: 0 auto;
 }
 
 .table__cell {
@@ -219,11 +222,11 @@
   background-position: left bottom; /*расположение изображения*/
   background-repeat: no-repeat; /*отключен повтор*/
   position: relative;
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 100px;   /*внутренний отступ до заголовка*/
 }
 
 .feinman__title {
@@ -274,12 +277,13 @@
 /*Принципы обучения*/
 .kaufman {
   background-color: #1f1f1f; 
+  padding: 90px 0 90px;
   position: relative;
   overflow: hidden;
 }
 
 .section-title_theme_dark {
-  margin: 90px auto  20px;
+  margin: 0 auto  20px;
   color: #f2f2f2;
   z-index: 2;
 }
@@ -291,6 +295,7 @@
 
 .table_theme_dark {
   display: flex;
+  margin:0 auto 0;
   z-index: 2;
 }
 
@@ -341,13 +346,17 @@
    margin: 60px auto 40px;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column{    /*общие свойства у copyright, info, social */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
+  padding: 0;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
 }
 
 .footer__autor {
@@ -359,6 +368,7 @@
 }
 
 .logo_place_footer {
+  height: 35px;
   background-image: url('../images/logo_place_footer.svg');
   top: 0;
   z-index: 2;
@@ -390,28 +400,20 @@
 }
 
 .footer__column_content_info {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   line-height: 30px;
   font-size: 18px;
   color: #f2f2f2;
-  margin: 0;
-  padding: 0;
   width: auto;
 }
 
 .footer__column_content_social {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   line-height: 30px;
   font-size: 18px;
   color: #f2f2f2;
-  margin: 0;
-  padding: 0;
   width: auto;
 }
 
