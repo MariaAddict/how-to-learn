@@ -1,0 +1,6 @@
+/*Цифры и факты*/
+.digits {
+    background-color: #fff;
+    padding: 100px 0;         /*отступ между description И feynman*/
+    position: relative;
+  }

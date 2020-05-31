@@ -1,0 +1,9 @@
+/* Вторая страница сайта - "Главные проблемы в обучении" */
+.description {
+  background-color: #fff;
+  padding: 100px 0 0;   /*отступ только сверху*/
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

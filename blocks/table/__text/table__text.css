@@ -1,0 +1,10 @@
+.table__text {
+    padding-top: 20px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    text-decoration: none;
+    text-align: left; 
+    color: #000;
+    font-weight: normal;
+  }
