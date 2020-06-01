@@ -1,5 +1,7 @@
 .section-title_theme_dark {
     margin: 0 auto  20px;
     color: #f2f2f2;
-    z-index: 2;
+    /*для того, чтобы треугольник не перекрывал надпись, задаю парамеры:*/
+    position: relative;  
+    z-index: 3;
   }

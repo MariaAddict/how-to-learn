@@ -8,5 +8,6 @@
   }
   
   .footer__column-link:hover {
-    text-shadow: 2px 2px 7px silver;
+    opacity: 0.7;
+    transition: opacity 0.8s ease-in;
   }

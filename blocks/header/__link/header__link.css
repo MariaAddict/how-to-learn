@@ -4,7 +4,6 @@
  }
  
  .header__link:hover {
-   text-decoration: blink;
-   color: #1f1f1f;
-   text-shadow: 2px 2px 5px rebeccapurple;
+   opacity: 0.7;
+   transition: opacity 0.5s ease-in;
  }

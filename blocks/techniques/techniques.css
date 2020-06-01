@@ -1,0 +1,8 @@
+.techniques {
+    width: 80%;
+    margin: 100px auto 40px;
+    /*в секции video отступ от верхней границы секцмм - 60px 
+    для наплывания видео на границу следующего блока
+
+     40px(margin-bottom)+60px (top в video) = 100px*/
+}

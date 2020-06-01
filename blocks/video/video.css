@@ -1,0 +1,10 @@
+@import url(./__iframes/video__iframes.css);
+@import url(./__iframe/video__iframe.css);
+.video {
+   background-color: #fff;
+   /*видео на границе двух блоков:*/
+   position: relative;
+   top: 60px; 
+   /*в секции techniques отступ между блоками 40px
+     40px(margin-bottom)+60px (top) = 100px*/
+}
