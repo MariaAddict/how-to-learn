@@ -10,4 +10,6 @@
   gap:  60px 100px;
   align-items: center;
   margin: 60px auto 0;
+  /*убрана маркировка созданного списка*/
+  list-style: none;
 }
